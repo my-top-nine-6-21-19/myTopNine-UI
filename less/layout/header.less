@@ -1,0 +1,40 @@
+// Navigation code here
+
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  background: @nav-bg;
+  padding: 1%;
+  @media @tablet {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  @media @phone{
+    height: 30px;
+  }
+  .logo{
+    color: white;
+    @media @phone{
+      display: none;
+    }
+  }
+  nav{
+    display: flex;
+    flex-direction: row;
+    @media @tablet {
+      justify-content: center;
+      text-align: center;
+    }
+    @media @phone{
+      display: none;
+    }
+    a{
+      padding: 1rem 1rem;
+      color: @links-color;
+      &:hover{
+        color: @links-hover-color;
+      }
+    }
+  }
+}
