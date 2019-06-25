@@ -129,11 +129,101 @@ table {
 * {
   box-sizing: border-box;
 }
+.container {
+  width: 100%;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
 html {
   font-size: 62.5%;
 }
-.container {
-  width: 100%;
+html,
+body {
+  font-family: 'Comic Sans MS', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+a {
+  font-size: 1.6rem;
+}
+.logo {
+  font-family: 'Segoe Script', sans-serif;
+  font-size: 2rem;
+}
+.nav-button {
+  border: 1px solid white;
+  border-radius: 30px;
+  background: #8E5FA4;
+  margin: 0 5px;
+}
+.menu-button {
+  display: none;
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+  max-width: 5%;
+}
+@media (max-width: 500px) {
+  .menu-button {
+    display: block;
+  }
+}
+.menu {
+  display: none;
+  position: fixed;
+  top: 29px;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  /* This give the height 100% of the screen or, '100% of View Height' */
+  background-color: #8E5FA4;
+  border-left: none;
+  border-bottom: none;
+  z-index: 2;
+}
+.menu ul {
+  display: flex;
+  flex-direction: column;
+}
+.menu ul a {
+  color: white;
+  padding: 2% 0;
+  text-align: center;
+}
+.menu--open {
+  display: block;
+}
+@media (max-width: 500px) {
+  .moving-menu {
+    animation: shimmy 3s;
+    animation-direction: alternate;
+  }
+}
+@keyframes shimmy {
+  0% {
+    transform: translate(-100%, 0);
+  }
+  100% {
+    transform: translate(0%, 0);
+  }
 }
 /*@import 'components/form';
 @import 'components/box';
@@ -143,9 +233,51 @@ html {
 @import 'components/actions';
 @import 'components/icons';
 @import 'components/table';*/
-header nav {
+.navigation {
+  display: flex;
+  justify-content: space-between;
   background: #8E5FA4;
+  padding: 1%;
 }
-header nav a {
-  color: #FFFFFF;
+@media (max-width: 800px) and (min-width: 500px) {
+  .navigation {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .navigation {
+    height: 30px;
+  }
+}
+.navigation .logo {
+  color: white;
+}
+@media (max-width: 500px) {
+  .navigation .logo {
+    display: none;
+  }
+}
+.navigation nav {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 800px) and (min-width: 500px) {
+  .navigation nav {
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .navigation nav {
+    display: none;
+  }
+}
+.navigation nav a {
+  padding: 1rem 1rem;
+  color: #fff5fa;
+}
+.navigation nav a:hover {
+  color: rgba(255, 193, 184, 0.93);
 }
