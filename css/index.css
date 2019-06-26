@@ -345,4 +345,5 @@ p {
 }
 .features .text-content ul li {
   padding: 5px;
+  list-style-type: circle;
 }
