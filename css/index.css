@@ -339,5 +339,36 @@ p {
   list-style-type: circle;
 }
 .testimonials-container .reviews p {
-  color: red;
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  margin-left: 20%;
+}
+.testimonials-container .review-details {
+  padding: 5px;
+  margin: 0 30px;
+  font-size: 16px;
+}
+.testimonials-container .review-details li {
+  padding: 3px;
+}
+.testimonials-container .img-reviews img {
+  padding: 5px;
+  margin: 0 30px;
+}
+.testimonials-container .img-content {
+  display: flex;
+}
+.testimonials-container .img-content img {
+  margin: auto;
+  width: 60%;
+  margin-bottom: 5%;
+}
+.testimonials-container .header-content {
+  display: flex;
+  background-color: #B8B6BA;
+}
+.testimonials-container .header-content img {
+  margin-left: 40%;
+  width: auto;
 }
