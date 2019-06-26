@@ -138,12 +138,15 @@ img {
 a {
   text-decoration: none;
 }
+body {
+  background-color: #f4f4f4;
+}
 html {
   font-size: 62.5%;
 }
 html,
 body {
-  font-family: 'Comic Sans MS', sans-serif;
+  font-family: 'Ubuntu';
 }
 h1 {
   font-size: 4rem;
@@ -171,7 +174,7 @@ a {
 .nav-button {
   border: 1px solid white;
   border-radius: 30px;
-  background: #8E5FA4;
+  background: #212529;
   margin: 0 5px;
 }
 .menu-button {
@@ -194,7 +197,7 @@ a {
   width: 200px;
   height: 100vh;
   /* This give the height 100% of the screen or, '100% of View Height' */
-  background-color: #8E5FA4;
+  background-color: #212529;
   border-left: none;
   border-bottom: none;
   z-index: 2;
@@ -236,7 +239,7 @@ a {
 .navigation {
   display: flex;
   justify-content: space-between;
-  background: #8E5FA4;
+  background: #212529;
   padding: 1%;
 }
 @media (max-width: 800px) and (min-width: 500px) {
@@ -276,17 +279,13 @@ a {
 }
 .navigation nav a {
   padding: 1rem 1rem;
-  color: #fff5fa;
+  color: #ffffff;
 }
 .navigation nav a:hover {
-  color: rgba(255, 193, 184, 0.93);
-}
-body {
-  background-color: #FEE0FA;
+  color: #d6d6d6;
 }
 .header-content h1 {
   padding: 15px;
-  background-color: #E5C2E0;
   display: flex;
   justify-content: center;
   margin: 0 30px;
@@ -298,7 +297,6 @@ h2 {
   padding: 15px;
   display: flex;
   justify-content: center;
-  color: #A25097;
 }
 p {
   padding: 15px;
@@ -314,17 +312,10 @@ p {
 }
 .header-content p {
   color: black;
-  background-color: #E5C2E0;
-}
-.story .text-content h2 {
-  color: #A25097;
 }
 .story .text-content p {
   color: black;
   padding: 15px;
-}
-.features .text-content h2 {
-  color: #A25097;
 }
 .features .text-content p {
   color: black;
@@ -346,4 +337,7 @@ p {
 .features .text-content ul li {
   padding: 5px;
   list-style-type: circle;
+}
+.testimonials-container .reviews p {
+  color: red;
 }
