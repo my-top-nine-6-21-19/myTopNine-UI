@@ -281,3 +281,58 @@ a {
 .navigation nav a:hover {
   color: rgba(255, 193, 184, 0.93);
 }
+body {
+  background-color: #FEE0FA;
+}
+.header-content h1 {
+  padding: 15px;
+  background-color: #E5C2E0;
+  display: flex;
+  justify-content: center;
+  margin: 0 30px;
+}
+h2 {
+  border: 2px solid black;
+  border-radius: 25px;
+  margin: 30px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  color: #A25097;
+}
+p {
+  padding: 15px;
+  margin: 0 30px;
+}
+.header-content p {
+  color: black;
+  background-color: #E5C2E0;
+}
+.story .text-content h2 {
+  color: #A25097;
+}
+.story .text-content p {
+  color: black;
+  padding: 15px;
+}
+.features .text-content h2 {
+  color: #A25097;
+}
+.features .text-content p {
+  color: black;
+}
+.img-content {
+  display: flex;
+}
+.img-content img {
+  margin: auto;
+  width: 30%;
+  margin-top: 20px;
+}
+.features ul {
+  padding: 15px;
+  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
