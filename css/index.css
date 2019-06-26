@@ -304,6 +304,14 @@ p {
   padding: 15px;
   margin: 0 30px;
 }
+@media (max-width: 500px) {
+  p {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+}
 .header-content p {
   color: black;
   background-color: #E5C2E0;
@@ -329,10 +337,12 @@ p {
   width: 30%;
   margin-top: 20px;
 }
-.features ul {
-  padding: 15px;
-  margin: 0 30px;
+.features .text-content ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 15px;
+}
+.features .text-content ul li {
+  padding: 5px;
 }

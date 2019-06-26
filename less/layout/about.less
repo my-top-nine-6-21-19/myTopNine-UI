@@ -64,14 +64,22 @@
         padding: 15px;
         display: flex;
         justify-content: center;
-        color:#A25097;
-        
+        color:#A25097;   
+       
     }
+    
+    
 
     p {
         // background-color: blue;
         padding: 15px;
         margin: 0 30px;
+        @media (max-width: 500px) {
+            width: 75%;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+          }
     }
 
 
@@ -106,12 +114,13 @@
         margin-top: 20px;
     }
 
-    .features ul {
-        padding: 15px;
-        margin: 0 30px;
+    .features .text-content ul {
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        font-size: 15px;
+        
+        li {
+            padding: 5px;
+        }
     }
-    
