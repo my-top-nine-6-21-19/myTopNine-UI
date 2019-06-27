@@ -9,21 +9,35 @@ class Carousel {
         this.images = this.carousel.querySelectorAll('[data-img]');
         this.indexOfFirstItem = 0;
         this.indexOfLastItem = 4;
+        this.arr = Array.from(this.images);
         this.rightButton.addEventListener('click', () => this.btnRight());
         this.leftButton.addEventListener('click', () => this.btnLeft());
     }
     btnRight(){
-        this.firstImage = this.carousel.querySelector('.active-img');
-        this.lastImage = this.carousel.querySelector(`[data-img='${++this.indexOfLastItem}']`);
-        this.firstImage.classList.remove('active-img');
-        this.lastImage.classList.add('active-img');
+        console.log(this.indexOfFirstItem)
+        console.log(this.indexOfLastItem)
+
+        if(this.indexOfLastItem != this.arr.length){
+            this.firstImage = this.carousel.querySelector(`[data-img='${++this.indexOfFirstItem}']`);
+            this.lastImage = this.carousel.querySelector(`[data-img='${++this.indexOfLastItem}']`);
+            console.log(this.indexOfFirstItem)
+            console.log(this.indexOfLastItem)
+            this.firstImage.classList.remove('active-img');
+            this.lastImage.classList.add('active-img');
+        }
     }
     btnLeft(){
-        console.log(this.indexOfLastItem);
-        this.firstImage = this.carousel.querySelector(`[data-img='${this.indexOfLastItem-4}']`);
-        this.lastImage = this.carousel.querySelector(`[data-img='${--this.indexOfLastItem}']`);
-        this.firstImage.classList.add('active-img');
-        this.lastImage.classList.remove('active-img');
+        console.log(this.indexOfFirstItem)
+        console.log(this.indexOfLastItem)
+
+        if(this.indexOfFirstItem != 0){
+            this.firstImage = this.carousel.querySelector(`[data-img='${this.indexOfFirstItem--}']`);
+            this.lastImage = this.carousel.querySelector(`[data-img='${this.indexOfLastItem--}']`);
+            console.log(this.indexOfFirstItem)
+            console.log(this.indexOfLastItem)
+            this.firstImage.classList.add('active-img');
+            this.lastImage.classList.remove('active-img');
+        }
     }
 }
 
