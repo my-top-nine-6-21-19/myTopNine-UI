@@ -511,45 +511,45 @@ a {
   height: 50rem;
   text-align: center;
 }
-.leadership {
+.member {
   background: #212529;
   color: #ffffff;
 }
-.leadership h1 {
+.member h1 {
   text-align: center;
   margin-bottom: 6%;
 }
-.leadership .leader-info {
+.member .member-info {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 @media (max-width: 800px) and (min-width: 500px) {
-  .leadership .leader-info {
+  .member .member-info {
     flex-direction: column;
   }
 }
-.leadership .leader-info .team-leader img {
+.member .member-info .team-member img {
   min-width: 200px;
 }
-.leadership .leader-info .team-leader-text {
+.member .member-info .team-member-text {
   max-width: 45%;
 }
-.leadership .leader-info .team-leader-text p {
+.member .member-info .team-member-text p {
   line-height: 3rem;
 }
-.leadership .leader-info .team-leader-text .team-name {
+.member .member-info .team-member-text .team-name {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 2%;
 }
 @media (max-width: 800px) and (min-width: 500px) {
-  .leadership .leader-info .team-leader-text .team-name {
+  .member .member-info .team-member-text .team-name {
     margin-top: 6%;
   }
 }
 @media (max-width: 800px) and (min-width: 500px) {
-  .leadership .leader-info .team-leader-text {
+  .member .member-info .team-member-text {
     max-width: 100%;
   }
 }

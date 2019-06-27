@@ -12,7 +12,7 @@
             crossorigin="anonymous"></script>
     <script src="../js/components/Menu.js" async></script>
     <script src="../js/components/carousel.js" async></script>
-    <!--    <script src="./components/Carousel/Carousel.js" async></script>-->
+        <script src="../js/team.js" async></script>
 </head>
 <body>
 <div class="container">
@@ -21,20 +21,20 @@
             <img class="menu-button" src="../img/menu.png"/>
             <h1 class="logo"></h1>
             <nav>
-                <a href="index.html">Home</a>
+                <a href="../index.html">Home</a>
                 <a href="pages/about.html">About</a>
-                <a href="#">Link</a>
+                <a href="pages/team.html">Our team</a>
                 <a href="#">Link</a>
                 <a class="nav-button">Sign-in</a>
-                <a class="nav-button">Sign-up</a>
+                <a href="https://nervous-mayer-90be94.netlify.com/login" class="nav-button">Login</a>
             </nav>
         </div>
         <div class="phone-nav">
             <div class="menu">
                 <ul>
-                    <a href="index.html">Home</a>
+                    <a href="../index.html">Home</a>
                     <a href="pages/about.html">About</a>
-                    <a href="#">Link</a>
+                    <a href="pages/team.html">Our team</a>
                     <a href="#">Link</a>
                 </ul>
             </div>
@@ -44,16 +44,14 @@
         <h1>Our amazing team of developers</h1>
     </section>
 
-    <section class=" team-block leadership">
-
+    <section class=" team-block member">
         <h1>Leadership</h1>
-
-        <div class="leader-info">
-            <article class="team-leader">
+        <div class="member-info">
+            <article class="team-member">
                 <img src="../img/team-img/Jacob%20Angulo.jpg" alt="">
             </article>
 
-            <div class="team-leader-text">
+            <div class="team-member-text">
                 <h2 class="team-name">Jacob Angulo</h2>
                 <p>Josh Silverman is Etsy's Chief Executive Officer, leading the company as it builds a platform that empowers creative entrepreneurs around the world. He is also a member of Etsy's board of directors.
 
@@ -67,35 +65,35 @@
 
     <div class="carousel">
         <div class="left-button"><</div>
-        <article data-img="1" class="active-img box web-ui-dev">
+        <article data-img="1" class="active-img box">
+            <img src="../img/team-img/Jacob%20Angulo.jpg" alt="">
+            <p class="team-name">Jacob Angulo</p>
+                <p class="team-role">TEAM LEADER</p>
+        </article>
+        <article data-img="2" class="active-img box web-ui-dev">
             <img src="../img/team-img/Laura%20DonDiego.jpg" alt="">
             <p class="team-name">Laura DonDiego</p>
             <p class="team-role">WEB UI DEVELOPER</p>
         </article>
-        <article data-img="2" class="active-img box web-ui-dev">
+        <article data-img="3" class="active-img box web-ui-dev">
             <img src="../img/team-img/Aleksandra%20Foksman.jpg" alt="">
             <p class="team-name">Aleksandra Foksman</p>
             <p class="team-role">WEB UI DEVELOPER</p>
         </article>
-        <article data-img="3" class="active-img box front-end-dev">
+        <article data-img="4" class="active-img box front-end-dev">
             <img src="../img/team-img/Philip%20Johnson.jpg" alt="">
             <p class="team-name">Philip Johnson</p>
             <p class="team-role">FRONT END ARCHITECT</p>
         </article>
-        <article data-img="4" class="active-img box front-end-dev">
+        <article data-img="5" class="box front-end-dev">
             <img src="../img/team-img/Derek%20Schwantner.jpg" alt="">
             <p class="team-name">Derek Schwantner</p>
             <p class="team-role">FRONT END ARCHITECT</p>
         </article>
-        <article data-img="5" class="box back-end-dev">
+        <article data-img="6" class="box back-end-dev">
             <img src="../img/team-img/Jacob%20Angulo.jpg" alt="">
             <p class="team-name">Tom Exarhakis</p>
             <p class="team-role">BACKEND ARCHITECT</p>
-        </article>
-        <article data-img="6" class="box team-leader">
-            <img src="../img/team-img/Jacob%20Angulo.jpg" alt="">
-            <p class="team-name">Jacob Angulo</p>
-            <p class="team-role">TEAM LEADER</p>
         </article>
         <div class="right-button">></div>
     </div>
