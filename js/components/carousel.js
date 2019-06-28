@@ -14,7 +14,7 @@ class Carousel {
     }
 
     phoneView(){
-        if(window.innerWidth > 700){
+        if(window.innerWidth > 800){
             this.carousel.querySelectorAll('.active-img').forEach(one => one.classList.remove('active-img'));
             this.newArr = this.carousel.querySelectorAll('.box');
             for(let i=0; i < 4; i++){
@@ -23,7 +23,7 @@ class Carousel {
         }
     }
     btnRight(){
-        if(window.innerWidth > 700){
+        if(window.innerWidth > 800){
             console.log(this.indexOfFirstItem)
             console.log(this.indexOfLastItem)
             if(this.indexOfLastItem != this.arr.length){
@@ -38,7 +38,7 @@ class Carousel {
 
     }
     btnLeft(){
-        if(window.innerWidth > 700){
+        if(window.innerWidth > 800){
             console.log(this.indexOfFirstItem)
             console.log(this.indexOfLastItem)
 
@@ -69,13 +69,13 @@ class PhoneCarousel{
         this.item = 1;
     }
     phoneView(){
-        if(window.innerWidth <= 700){
+        if(window.innerWidth <= 800){
             this.carousel.querySelectorAll('.active-img').forEach(one => one.classList.remove('active-img'));
             this.img.classList.add('active-img');
         }
     }
     btnRight(){
-        if(window.innerWidth <= 700) {
+        if(window.innerWidth <= 800) {
             if (6 != this.item) {
                 this.carousel.querySelector(`[data-img = '${this.item}']`).classList.remove('active-img');
                 this.carousel.querySelector(`[data-img = '${++this.item}']`).classList.add('active-img');
@@ -84,7 +84,7 @@ class PhoneCarousel{
         }
     }
     btnLeft(){
-        if(window.innerWidth <= 700) {
+        if(window.innerWidth <= 800) {
             console.log(this.item);
             if (1 != this.item) {
                 this.carousel.querySelector(`[data-img = '${this.item}']`).classList.remove('active-img');
