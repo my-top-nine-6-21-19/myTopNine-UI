@@ -8,6 +8,7 @@
  
    <title>My Top 9</title>
    <script src="../js/components/Menu.js" async></script>
+   <script src="../js/about.js"></script>
    <link href="../css/index.css" rel="stylesheet">
    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 
@@ -15,15 +16,15 @@
   </head>
 
   <body>
-      <div class="container">
+      <div class="about-container">
           <header>
               <div class="navigation">
                   <img class="menu-button" src="../img/menu.png"/>
-                  <h1 class="logo">My top nine</h1>
+                  <!-- <h1 class="logo">My top nine</h1> -->
                   <nav>
                       <a href="index.html">Home</a>
-                      <a href="pages/about.html">About</a>
-                      <a href="#">Link</a>
+                      <a href="/HTML/about.html">About</a>
+                      <a href="/HTML/testimonials.html">Testimonials</a>
                       <a href="#">Link</a>
                       <a class="nav-button">Sign-in</a>
                       <a class="nav-button">Sign-up</a>
@@ -34,7 +35,7 @@
                       <ul>
                           <a href="index.html">Home</a>
                           <a href="pages/about.html">About</a>
-                          <a href="#">Link</a>
+                          <a href="/HTML/testimonials.html">Testimonials</a>
                           <a href="#">Link</a>
                       </ul>
                   </div>
@@ -42,16 +43,47 @@
           </header>
  
  
+
+
     <div class="header-content">
       <!-- <h1>My Top 9</h1> -->
       <img src="/img/about.png" alt="about photo">
-      <p>A new, centralized, social website bringing you even closer to your absolute top besties.
-          Our website allows you to keep in close contact with 9 of your closest friends or family
-          members, without the clutter of the "others".
-        </p>
+      <!-- <p> something here
+        </p> -->
     </div>   
 
-   
+    <div class="tab">
+        <button class="tablinks" onclick="openAbout(event, 'Overview')">Overview</button>
+        <button class="tablinks" onclick="openAbout(event, 'New')">What's New</button>
+        <button class="tablinks" onclick="openAbout(event, 'Support')">Support</button>
+      </div> 
+      
+      <!-- Tab content -->
+      <div id="Overview" class="tabcontent">
+        <h3>Overview</h3>
+        <p>A new, centralized, social website bringing you even closer to your absolute top besties.
+            Our website allows you to keep in close contact with 9 of your closest friends or family
+            members, without the clutter of the "others". Organize different groups of friends into
+          categories and keep your social life organized!</p>
+      </div>
+      
+      <div id="New" class="tabcontent">
+        <h3>What's New</h3>
+        <p>Check out our exciting new feature, My Top 9 Friend Location Map! Find friends instantly when they turn their location on. Track check-ins, 
+          activity, and share your own location with your friends. You can feel completely safe using this feature because you can turn it on and off with 
+          different friend groups, allowing your trusted best friends to see where you are!
+        </p> 
+      </div>
+      
+      <div id="Support" class="tabcontent">
+        <h3>Support</h3>
+        <p>Our support team is here to help 24/7 via live chat, email, and phone. Ask us
+          anything or just come say hi!
+        </p>
+      </div> 
+
+
+
     <section class="story">
       <div class="text-content">
         <h2>Our Story</h2>
@@ -89,6 +121,7 @@
     </section>
 
     <section class="users">
+        <div class="text-content">
       <h2>Users</h2>
       <p>My Top 9 users have the opportunity to control their ultimate social experience 
         by keeping ties tight with their closest friends, relatives, and peers.
@@ -98,14 +131,22 @@
         scroll through the menu and customize your page to show exactly what you want, and how
         you want it. 
       </p>
+        </div>
       <div class="img-content">
       <img src="/img/friends.jpg" alt="Friends picture">
     </div>
     </section>
     
     <footer class="footer">
-      <p> My Top 9 2019</p>
-    </footer>
+        <!-- <img src="/img/logo-allwhite.png" alt="logo" /> -->
+        <p>Copywrite My Top 9 2019</p>
+        <nav>
+            <a href="#">Contact</a>
+            <a href="#">More Info</a>
+            <a href="#">Help Desk</a> 
+            <a href="#">News</a>
+        </nav>
+  </footer>
 
     </div>
     </body>

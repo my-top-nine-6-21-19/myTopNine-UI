@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
     <link href="../css/index.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../js/components/carousel.js" async></script>
+    <script src="../js/testimonials.js" async></script>
     <script src="../js/components/Menu.js" async></script>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 </head>
@@ -16,11 +18,11 @@
       <header>
         <div class="navigation">
           <img class="menu-button" src="../img/menu.png" />
-          <h1 class="logo">My top nine</h1>
+          <!-- <h1 class="logo">My top nine</h1> -->
           <nav>
-            <a href="index.html">Home</a>
-            <a href="pages/about.html">About</a>
-            <a href="#">Link</a>
+            <a href="/index.html">Home</a>
+            <a href="/HTML/about.html">About</a>
+            <a href="/HTML/testimonials.html">Testimonials</a>
             <a href="#">Link</a>
             <a class="nav-button">Sign-in</a>
             <a class="nav-button">Sign-up</a>
@@ -30,8 +32,8 @@
           <div class="menu">
             <ul>
               <a href="index.html">Home</a>
-              <a href="pages/about.html">About</a>
-              <a href="#">Link</a>
+              <a href="/HTML/about.html">About</a>
+              <a href="/HTML/testimonials.html">Testimonials</a>
               <a href="#">Link</a>
             </ul>
           </div>
@@ -44,50 +46,49 @@
         <img src="/img/5starheader.jpg" alt="5 stars" />
         <!-- <p>See what people are raving about</p> -->
       </div>
-
       <section class="testimonials">
         <div class="text-content">
           <h2>Testimonials</h2>
           <h4>Come see what our customers have to say about us. </h4>
-          <p>Check out our acclaims from REAL users and join the My Top 9 community now!</p>
-          <div class="img-content">
-            <img src="/img/rating-distribution.png" alt="Rating distribution" />
-          </div>
+          <p>Check out our reviews from REAL users and join the My Top 9 community now!</p>
         </div>
-      </section>
+        </section>  
 
-
-
-      <!-- <div class="tab">
-            <button class="tablinks" onclick="openAbout(event, 'Ourstory')">Our Story</button>
-            <button class="tablinks" onclick="openAbout(event, 'Features')">Features</button>
-            <button class="tablinks" onclick="openAbout(event, 'Users')">Users</button>
-          </div> -->
-          
-          <!-- Tab content -->
-          <!-- <div id="Ourstory" class="tabcontent">
-            <h3>Our Story</h3>
-            <p>My story content here.</p>
-          </div>
-          
-          <div id="Features" class="tabcontent">
-            <h3>Features</h3>
-            <p>Features content here.</p> 
-          </div>
-          
-          <div id="Users" class="tabcontent">
-            <h3>Users</h3>
-            <p>User content here.</p>
-          </div> -->
-
- 
-      
-    
-
-
-
-
-
+      <div class="carousel">
+        <div class="left-button"><</div>
+        <article data-img="1" class="active-img box web-ui-dev">
+            <img src="../img/carpic1.jpg" alt="">
+            <p class="team-name">"BEST APP EVER!"</p>
+            <p class="team-role">Jenny from Florida</p>
+        </article>
+        <article data-img="2" class="active-img box web-ui-dev">
+            <img src="../img/carpic2.jpg" alt="">
+            <p class="team-name">"Always connected to my sister."</p>
+            <p class="team-role">Colleen from Boston</p>
+        </article>
+        <article data-img="3" class="active-img box front-end-dev">
+            <img src="../img/carpic8.jpg" alt="">
+            <p class="team-name">"Easy to exchange gaming content with my buddies"</p>
+            <p class="team-role">Len from New Jersey</p>
+        </article>
+        <article data-img="4" class="active-img box front-end-dev">
+            <img src="../img/carpic3.jpg" alt="">
+            <p class="team-name">"I know exactly where my friends are!"</p>
+            <p class="team-role">Kim from Washington</p>
+        </article>
+        <article data-img="5" class="box back-end-dev">
+            <img src="../img/carpic5.jpg" alt="">
+            <p class="team-name">"Don't know how I survived without My Top 9!"</p>
+            <p class="team-role">Elise from Arizona</p>
+        </article>
+        <article data-img="6" class="box team-leader">
+            <img src="../img/carpic6.jpg" alt="">
+            <p class="team-name">"I haven't missed a beat staying in contact with all of my groups of friends and colleagues"</p>
+            <p class="team-role">Matt from Nevada</p>
+        </article>
+        <div class="right-button">></div>
+    </div>
+  
 
 
       <section class="reviews">
@@ -173,8 +174,20 @@
         </div>
       </section>
 
+      <div class="img-content">
+          <img src="/img/rating-distribution.png" alt="Rating distribution" />
+        </div>
+
+
       <footer class="footer">
-            <img src="/img/logo-greycontrast.png" alt="logo" />
+            <!-- <img src="/img/logo-allwhite.png" alt="logo" /> -->
+            <p>Copywrite My Top 9 2019</p>
+            <nav>
+                <a href="#">Contact</a>
+                <a href="#">More Info</a>
+                <a href="#">Help Desk</a> 
+                <a href="#">News</a>
+            </nav>
       </footer>
     </div>
   </body>
