@@ -1,6 +1,6 @@
 
 const myInput1 = 
-document.querySelector('.img-content img');
+document.querySelector('.laura-content laura');
 myInput1.addEventListener('click', (event) => {
   myInput1.style.border = "6px dotted black";
 });
