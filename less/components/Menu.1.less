@@ -1,0 +1,53 @@
+.menu-button {
+  display: none;
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+  max-width: 5%;
+  @media @phone{
+    display: block;
+  }
+}
+
+.menu{
+  display: none;
+  position: fixed;
+  top: 29px;
+  left: 0;
+  width: 200px;
+  height: 100vh; /* This give the height 100% of the screen or, '100% of View Height' */
+  background-color: @nav-bg;
+  border-left: none;
+  border-bottom: none;
+  z-index: 2;
+  ul{
+    display: flex;
+    flex-direction: column;
+  }
+}
+.menu ul a{
+  color: white;
+  padding: 2% 0;
+  text-align: center;
+}
+
+.menu--open {
+  display: block;
+}
+
+.moving-menu{
+  @media @phone{
+    animation: shimmy 3s;
+    animation-direction: alternate;
+  }
+
+}
+
+@keyframes shimmy {
+  0%{
+    transform: translate(-100%, 0);
+  }
+  100% {
+    transform: translate(0%, 0);
+  }
+}

@@ -23,5 +23,3 @@ class Members{
 
 
 const members = document.querySelectorAll('.box').forEach(article => new Members(article));
-
-
