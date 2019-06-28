@@ -1,44 +1,76 @@
 .team-block{
-  padding: 6% 10%;
+  padding-bottom: 3%;
+  padding-top: 3%;
 }
 
 .team-intro{
-  background-image: url("../img/team-intro-bg.jpg");
-  background-size: 100%;
-  opacity: 0.5;
-  height: 50rem;
-  text-align: center;
-  //p{
-  //  margin: 3% 0;
-  //  font-size: 3rem;
-  //  opacity: 10;
-  //}
-}
-
-
-.leadership{
-  background: @black;
-  color: @white;
+  position: relative;
+  padding: 14% 0;
+  color: white;
+  .cover{
+    background: black;
+    opacity: 0.6;
+    padding: 5%;
+  }
   h1{
     text-align: center;
-    margin-bottom: 6%;
+    @media @phone{
+      font-size: 3.2rem;
+    }
+    @media @tablet{
+      font-size: 4rem;
+    }
   }
-  .leader-info{
+  &::after {
+    background-image: url("../img/team-intro-bg.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.member{
+  box-shadow: 0px 7px 20px 0px #262626;
+  background: @black;
+  color: @white;
+  h1 {
+    text-align: center;
+    margin-bottom: 4%;
+    @media @phone {
+      font-size: 3.2rem;
+    }
+    @media @tablet {
+      font-size: 4rem;
+    }
+  }
+  .member-info{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     @media @tablet{
       flex-direction: column;
+      justify-content: center;
     }
-    .team-leader{
+    .team-member{
+      text-align: center;
       img{
-        min-width: 200px;
+
+        padding: 0 2%;
       }
     }
-    .team-leader-text{
+    .team-member-text{
         max-width: 45%;
         p{
           line-height: 3rem;
+          padding: 2%;
         }
         .team-name{
           font-size: 2rem;
@@ -55,19 +87,35 @@
   }
 }
 
+.carousel-team{
+  h2{
+    margin: 3% 10% 2% 11%;
+  }
+}
 .carousel{
   width: 80%;
   margin: auto;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   background: @white;
   position: relative;
+  a{
+    text-decoration: none;
+    color: #959595;
+    &:hover{
+      color: @black;
+    }
+  }
   .box{
-    margin: 1.5%;
+    margin: 8.5%;
     text-align: center;
     display: none;
   }
   .active-img{
     display: block;
+  }
+  .team-review{
+    display: none;
   }
 }
