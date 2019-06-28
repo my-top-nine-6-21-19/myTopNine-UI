@@ -142,6 +142,9 @@ body {
   background-color: #f4f4f4;
 }
 html {
+  background: #f4f4f4;
+}
+html {
   font-size: 62.5%;
 }
 html,
@@ -501,6 +504,7 @@ a {
 .navigation nav a:hover {
   color: #d6d6d6;
 }
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -857,6 +861,8 @@ a {
   border-radius: 25px;
   opacity: 0.5;
 }
+=======
+
 .team-block {
   padding: 6% 10%;
 }
